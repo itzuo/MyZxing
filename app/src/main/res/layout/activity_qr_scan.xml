@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nav="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.myzxing.NavBarHeader
+        android:id="@+id/nav_bar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        nav:backgroundColor="@color/cl_ff"
+        nav:isShowLine="true"
+        nav:lineColor="@color/cl_cc"
+        nav:titleColor="@color/cl_33"
+        nav:titleText="" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <SurfaceView
+                android:id="@+id/preview_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+            <com.google.zxinglib.view.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/status_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="#00000000"
+                android:text="请将二维码置于取景框内扫描"
+                android:textColor="#ffffffff" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/zxing_button_light"
+            android:onClick="changeLightStatus" />
+    </RelativeLayout>
+</LinearLayout>

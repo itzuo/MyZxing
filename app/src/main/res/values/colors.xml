@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="cl_ff">#ffffff</color>
+    <color name="cl_cc">#cccccc</color>
+    <color name="cl_ed">#dcdcdc</color>
+    <color name="cl_33">#333333</color>
+    <color name="cl_89">#85b6f9</color>
+    <color name="cl_fc5">#ff6c55</color>
+</resources>
